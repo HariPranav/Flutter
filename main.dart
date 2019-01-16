@@ -9,43 +9,30 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      color: Colors.greenAccent,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Top 10 anime'),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black,
+          onPressed: () {
+            print('Hello');
+          },
+          child: Icon(Icons.add),
         ),
-        backgroundColor: Colors.greenAccent,
-        body:  Center(child: Text('My Page!')),
-        drawer: Drawer(
-          child: ListView(
-            padding: EdgeInsets.zero,
-            children: <Widget>[
-              DrawerHeader(
-                child: Text('Otaku Gozaimas'),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-              ),
-              ListTile(
-                title: Text('Avicii'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                title: Text('Hardwell'),
-                onTap: () {
-                  // Update the state of the app
-                  // ...
-                  // Then close the drawer
-                  Navigator.pop(context);
-                },
-              ),
-            ],
-          ),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          centerTitle: true,
+          /*Code To create an icon  : actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+                print("La La La La Tin Tin Thin Alladeen Modafuka");
+              },
+            )
+          ],*/
+          title: Text('Thug ༼ຈل͜ຈ༽ Farmer'),
+        ),
+        body: Padding(
+          padding: EdgeInsets.only(top : 40.0,left: 20),
+          child: Text("Hello World" , style: TextStyle(fontSize: 30),),
         ),
       ),
     );
