@@ -1,42 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
-
 void main(List<String> args) {
   runApp(
     MaterialApp(
+      
       debugShowCheckedModeBanner: false,
       home: MyApp(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('data'),
-          backgroundColor: Colors.greenAccent,
-        ),
-        body: new SizedBox(
-  height: 150.0,
-  width: 300.0,
-  child: new Carousel(
-    images: [
-      new NetworkImage('https://cdn-images-1.medium.com/max/2000/1*GqdzzfB_BHorv7V2NV7Jgg.jpeg'),
-      new NetworkImage('https://cdn-images-1.medium.com/max/2000/1*wnIEgP1gNMrK5gZU7QS0-A.jpeg'),
-      new ExactAssetImage("assets/images/LaunchImage.jpg")
-    ],
-  )
-),
-
-      ),
-    );
-  }
-}
-/*class MyApp extends StatefulWidget {
+class MyApp extends StatefulWidget {
   @override
   _State createState() => _State();
 }
@@ -46,10 +21,15 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: GridView.count(
-          crossAxisCount: 2,
-          children: <Widget>[Text('Potato'), Text('Tomato')],
-        ),
+        body:  new Carousel(
+              boxFit: BoxFit.cover,
+              images: [
+                new NetworkImage(
+                    'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/57c4adf76b8f5b2699668dfa/57c4ae5abebafb54228aa871/1472507484683/bonsai.jpg?format=100w'),
+                new NetworkImage(
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Redwood_bonsai.JPG/320px-Redwood_bonsai.JPG'),
+              ],
+            ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(Icons.shopping_cart),
@@ -117,4 +97,3 @@ class _State extends State<MyApp> {
     );
   }
 }
-*/
