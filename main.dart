@@ -4,7 +4,6 @@ import 'package:carousel_pro/carousel_pro.dart';
 void main(List<String> args) {
   runApp(
     MaterialApp(
-      
       debugShowCheckedModeBanner: false,
       home: MyApp(),
     ),
@@ -21,15 +20,17 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body:  new Carousel(
-              boxFit: BoxFit.cover,
-              images: [
-                new NetworkImage(
-                    'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/57c4adf76b8f5b2699668dfa/57c4ae5abebafb54228aa871/1472507484683/bonsai.jpg?format=100w'),
-                new NetworkImage(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Redwood_bonsai.JPG/320px-Redwood_bonsai.JPG'),
-              ],
-            ),
+        body: new Carousel(
+          boxFit: BoxFit.cover,
+          images: [
+            new NetworkImage(
+                'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/t/5b0df6ae1ae6cff4f8f03a6e/1527641806065/garden_club_blog.jpg?format=10000w'),
+            new NetworkImage(
+                'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/t/5b718427562fa71f5e582085/1534166074632/tomato_9_18.jpg?format=100000w'),
+            new NetworkImage(
+                'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/t/58f56462c534a5b6189ae0ef/1492477039659/?format=10000w'),
+          ],
+        ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(Icons.shopping_cart),
