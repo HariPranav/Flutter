@@ -20,6 +20,15 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+            title: Text('Thug ༼ຈل͜ຈ༽ Farmer'),
+            backgroundColor: Colors.black,
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search, color: Colors.white),
+                onPressed: () {},
+              )
+            ]),
         body: new Carousel(
           boxFit: BoxFit.cover,
           images: [
@@ -30,21 +39,16 @@ class _State extends State<MyApp> {
             new NetworkImage(
                 'https://static1.squarespace.com/static/577c209ad482e935c6b1e2a4/t/58f56462c534a5b6189ae0ef/1492477039659/?format=10000w'),
           ],
+          animationDuration: Duration(seconds: 2),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.shopping_cart),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SecondScreen()));
+          },
+          child: Icon(Icons.arrow_forward),
           backgroundColor: Colors.black,
         ),
-        appBar: AppBar(
-            title: Text('Thug ༼ຈل͜ຈ༽ Farmer'),
-            backgroundColor: Colors.black,
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.search, color: Colors.white),
-                onPressed: () {},
-              )
-            ]),
         drawer: Drawer(
           child: ListView(
             children: <Widget>[
@@ -93,6 +97,31 @@ class _State extends State<MyApp> {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatefulWidget {
+  @override
+  _SecondScreenState createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('data'),
+        ),
+        
+        floatingActionButton: FloatingActionButton(
+          onPressed: () { Navigator.pop(context);},
+          child: Icon(Icons.arrow_forward),
+          backgroundColor: Colors.black,
+          
         ),
       ),
     );
