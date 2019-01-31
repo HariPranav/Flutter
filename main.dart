@@ -4,7 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 void main(List<String> args) {
   runApp(
     MaterialApp(
-      debugShowCheckedModeBanner: false,
+      showSemanticsDebugger: false,
       home: MyApp(),
     ),
   );
@@ -19,16 +19,8 @@ class _State extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-            title: Text('Thug ༼ຈل͜ຈ༽ Farmer'),
-            backgroundColor: Colors.black,
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.search, color: Colors.white),
-                onPressed: () {},
-              )
-            ]),
         body: new Carousel(
           boxFit: BoxFit.cover,
           images: [
@@ -45,6 +37,55 @@ class _State extends State<MyApp> {
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => SecondScreen()));
+          },
+          child: Icon(Icons.arrow_forward),
+          backgroundColor: Colors.black,
+        ),
+      ),
+    );
+  }
+}
+
+class SecondScreen extends StatefulWidget {
+  @override
+  _SecondScreenState createState() => _SecondScreenState();
+}
+
+class _SecondScreenState extends State<SecondScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+            title: Text('Thug ༼ຈل͜ຈ༽ Farmer'),
+            backgroundColor: Colors.black,
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(Icons.search, color: Colors.white),
+                onPressed: () {},
+              )
+            ]),
+        body: GridView.count(
+          crossAxisCount: 2,
+          children: <Widget>[
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/50000557_5-fresho-tomato-hybrid-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/40023472_3-fresho-onion-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/10000272_11-fresho-carrot-ooty.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/40023476_4-fresho-potato-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/10000284_11-fresho-green-peas.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/10000273_13-fresho-mushrooms-button.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/50000506_4-fresho-garlic-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/40022635_4-fresho-beetroot-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/40023480_3-fresho-ginger-organically-grown.jpg'),
+            Image.network('https://www.bigbasket.com/media/uploads/p/l/40023473_4-fresho-cabbage-organically-grown.jpg'),
+            
+            
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.pop(context);
           },
           child: Icon(Icons.arrow_forward),
           backgroundColor: Colors.black,
@@ -98,32 +139,10 @@ class _State extends State<MyApp> {
             ],
           ),
         ),
+        //body: LoginScreen();
       ),
     );
   }
 }
 
-class SecondScreen extends StatefulWidget {
-  @override
-  _SecondScreenState createState() => _SecondScreenState();
-}
-
-class _SecondScreenState extends State<SecondScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('data'),
-        ),
-        
-        floatingActionButton: FloatingActionButton(
-          onPressed: () { Navigator.pop(context);},
-          child: Icon(Icons.arrow_forward),
-          backgroundColor: Colors.black,
-          
-        ),
-      ),
-    );
-  }
-}
+//https://images5.alphacoders.com/420/420022.jpg
