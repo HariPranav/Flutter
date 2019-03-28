@@ -17,3 +17,9 @@ https://startflutter.com/themes/
 https://github.com/Solido/awesome-flutter
 
 https://flutter.io/docs/development/ui/layout#flutters-approach-to-layout
+
+Important Shortcuts in VScode :
+
+ctrl+F5 to refresh after importing packages into the app
+
+ctrl+shift+i  to indent the code
