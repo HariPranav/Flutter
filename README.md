@@ -23,3 +23,5 @@ Important Shortcuts in VScode :
 ctrl+F5 to refresh after importing packages into the app
 
 ctrl+shift+i  to indent the code
+
+To perfectly fit an image into a container  : use boxfit.fill
