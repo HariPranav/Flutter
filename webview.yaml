@@ -1,0 +1,7 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_webview_plugin: ^0.3.3
+  
+  
+ https://pub.dartlang.org/packages/flutter_webview_plugin#-readme-tab-
