@@ -54,7 +54,7 @@ To add an image to the icon of the app  : android->app->src->main->res->Show in 
     - here  below we have two containers, the first having width of 280 and the second having a width of 180 ,and we have given the 
       crossAxisAlignment to end
       
-      ![RowsAndColumns](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-125631.jpg)
+![RowsAndColumns](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-125631.jpg)
       
      
      
