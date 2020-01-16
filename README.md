@@ -1,22 +1,17 @@
 List Of Resources To Start With flutter :
 
-https://www.youtube.com/watch?v=GLSG_Wh_YWc
-
-
-https://flutterlearn.com/courses/basic-course/lessons/importing-images-as-assets/
-
 https://codelabs.developers.google.com/codelabs/flutter/#0
 
 
+Flutter Bootcamp : https://www.appbrewery.co/p/flutter-development-bootcamp-with-dart/
+
 https://flutterlearn.com/
 
+Facebook group: https://www.facebook.com/groups/425920117856409/
 
-https://startflutter.com/themes/
+MtechViral : https://www.youtube.com/watch?v=Nl2kmAbC0bg&list=PLR2qQy0Zxs_WAho9MWS1e36xF9PKLdM5w&index=2&t=0s
 
 
-https://github.com/Solido/awesome-flutter
-
-https://flutter.io/docs/development/ui/layout#flutters-approach-to-layout
 
 Important Shortcuts in VScode :
 
@@ -28,3 +23,14 @@ To perfectly fit an image into a container  : use boxfit.fill
 
 
 To add an image to the icon of the app  : android->app->src->main->res->Show in explorer and repalce all the minmap from https://appicon.co/
+
+
+
+## Containers in Flutter :
+  
+    - A container in flutter is similar to a div in web development 
+    - A container is a single view widget which can contain only a single **child** 
+    - margin : EdgeInsets.all() is used to align a particular container on the screen
+    - padding : EdgeInsets.all() is used to align the contengts of a continer and not the container itself.
+    
+![Container]("")
