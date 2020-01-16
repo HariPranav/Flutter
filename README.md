@@ -33,4 +33,4 @@ To add an image to the icon of the app  : android->app->src->main->res->Show in 
     - margin : EdgeInsets.all() is used to align a particular container on the screen
     - padding : EdgeInsets.all() is used to align the contengts of a continer and not the container itself.
     
-![Container]("")
+![Container]("https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-100925.jpg")
