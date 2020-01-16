@@ -34,3 +34,29 @@ To add an image to the icon of the app  : android->app->src->main->res->Show in 
     - padding : EdgeInsets.all() is used to align the contengts of a continer and not the container itself.
     
 ![Container](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-100925.jpg)
+
+## Rows and Columns:
+  
+    - The problem with these two widgets is that they extend the entire row or the column
+        - To prevent this we make use of the mainAxisSize: MainAxisSize.min/max widget to limit the size of the Row or Column its  
+          children
+ ![mainAxis.size](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-123708.jpg)
+    - We can use the Row Widget to use multiple widgets in a Row and Column widget to store multiple things in a single column                 
+      horizontally.
+    -For the column widget we can use the verticalDirection : VerticalDirection.down to allow the alignment from top to bottom.
+    
+    - To align all the children of the  row or column , we can use the mainAxisAlignment:MainAxisAlignment.spaceEvenly widget
+    
+     ![RowsAndColumns](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-124601.jpg)
+     
+    - The mainAxisAlignment and the crossAxisAlignment widgets align the children based on the largest child height or width.
+    
+    - here  below we have two containers, the first having width of 280 and the second having a width of 180 ,and we have given the 
+      crossAxisAlignment to end
+      
+      ![RowsAndColumns](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-125631.jpg)
+      
+     
+     
+     
+    
