@@ -56,7 +56,7 @@ To add an image to the icon of the app  : android->app->src->main->res->Show in 
       
 ![RowsAndColumns](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200116-125631.jpg)
       
- #Mi Card Challenge:
+ # Mi Card Challenge:
      
 ![Mi Card Challenge](https://raw.githubusercontent.com/HariPranav/Flutter/master/micardChallenge.png)
     
@@ -66,10 +66,22 @@ To add an image to the icon of the app  : android->app->src->main->res->Show in 
                                        ->Container->Row->Icon
                                                        ->Phone Number
                                                        
- ##Completed Challenge!!
+ ## Completed Challenge!!
  
 ![Mi card Challenge](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-222956.jpg)
                                   
      
-     
-    
+# How to space out multiple elements in a Row
+
+Multiple images have multiple pixels and multiple sizes that have to be taken into consideration before using them on **multiple screens sizes** and multiple **orientations**
+
+below is an example of a dice images which is 500px and it extends out of the boundaries
+
+![](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-223458.jpg)
+
+WE have the widget known as the  **Expanded Widget** which contains a **flex** property which is **1** by default which denotes the **ratio**
+
+Hence if we put out images or other widgets which are part of rows or columns inside an **Expanded Widget** the elements will fit in according to the screen size
+
+![Exxpanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224218.jpg)
+![Expanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224237.jpg)
