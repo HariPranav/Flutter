@@ -85,3 +85,8 @@ Hence if we put out images or other widgets which are part of rows or columns in
 
 ![Exxpanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224218.jpg)
 ![Expanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224237.jpg)
+
+
+## Using Flex
+
+![Flex With Exapanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224836.jpg)
