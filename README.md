@@ -90,3 +90,10 @@ Hence if we put out images or other widgets which are part of rows or columns in
 ## Using Flex
 
 ![Flex With Exapanded Widget](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200119-224836.jpg)
+
+
+## Create app with background 
+
+  Using **scafffold** bg color and the container bg color we can have a dual tone accent to the app
+  
+![](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200124-090918.jpg)
