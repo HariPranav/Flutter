@@ -96,4 +96,22 @@ Hence if we put out images or other widgets which are part of rows or columns in
 
   Using **scafffold** bg color and the container bg color we can have a dual tone accent to the app
   
-![](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200124-090918.jpg)
+![Dual Tone App](https://raw.githubusercontent.com/HariPranav/Flutter/master/Screenshot_20200124-090918.jpg)
+
+
+## Dice App challenge 
+
+We use the set state function to identify the **variable** in which the state is changed and to mark it as **dirty** this allows the build method to identify the part of the code in which the build method is changed and **paint** the screen accordingly.
+
+In this challenge we need to change the state of both the dice when a single die is pressed 
+
+Hence the mistake that i was making was that **i used a single variable** to change the state of the die when a single die is pressed
+
+By using **two variables ** to change the state the app was successfull
+
+Next when we used a **single** function to encapsulte the **Random Variables** the function was **outside the class** hence the **setState()** method was not working hence by using it within the class we can see that it works now
+
+![properSetState](https://raw.githubusercontent.com/HariPranav/Flutter/master/1.png)
+
+
+ 
