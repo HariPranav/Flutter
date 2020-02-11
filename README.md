@@ -114,4 +114,23 @@ Next when we used a **single** function to encapsulte the **Random Variables** t
 ![properSetState](https://raw.githubusercontent.com/HariPranav/Flutter/master/1.png)
 
 
+## Fixing the page navigation and Adding Floating action buttons in the App
+
+  Always call a new function from MyApp() i.e
+  
+      void main() => runApp(MyApp());
+
+      class MyApp extends StatefulWidget {
+     @override
+      _MyAppState createState() => _MyAppState();
+    }
+
+    class _MyAppState extends State<MyApp> {
+    @override
+    Widget build(BuildContext context) {
+    return MaterialApp(debugShowCheckedModeBanner: false, home: FirstScreen());
+   }
+  }
  
+ 
+ Now for the use of Floating Action Button we need to call it under the **Scaffold** under the  **body** after another widget
